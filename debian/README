@@ -1,0 +1,6 @@
+The Debian Package vyatta-eventwatch
+------------------------------------
+
+This package contains the event-handler implemetation with CLI
+
+ -- Jon Andersson <jon.andersson@thalesgroup.com>  Mon, 28 May 2012 11:00:02 -0100

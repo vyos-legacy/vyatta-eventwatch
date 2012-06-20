@@ -1,0 +1,5 @@
+type:  txt 
+allowed: echo "syslog"
+default:  "syslog"
+help: Preset values
+val_help: syslog; Use syslog to detect events

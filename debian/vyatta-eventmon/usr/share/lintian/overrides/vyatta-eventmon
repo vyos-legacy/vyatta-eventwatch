@@ -1,0 +1,2 @@
+vyatta-eventmon: file-in-unusual-dir
+vyatta-eventmon: dir-or-file-in-opt
