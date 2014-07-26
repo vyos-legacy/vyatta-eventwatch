@@ -1,3 +1,0 @@
-help: Executable to run
-type: txt
-syntax:expression: exec "[ -x $(echo $VAR(@) | awk -F ' ' '{ print $1 }') ] || exit 1"; "Should be an existing executable"
