@@ -1,3 +1,9 @@
+vyatta-eventwatch (0.1+vyos1+helium1) unstable; urgency=low
+
+  * Modifications for VyOS release.
+
+ -- Daniil Baturin <daniil@baturin.org>  Sat, 26 Jul 2014 21:09:00 +0200
+
 vyatta-eventwatch (0.1) UNRELEASED; urgency=low
 
   * Initial Release.
