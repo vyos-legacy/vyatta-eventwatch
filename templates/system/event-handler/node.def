@@ -1,18 +1,10 @@
 help: Event-handler configuration
 end:
-	configfile=/tmp/eventwatch.conf
+	configfile=/tmp/eventwatchd.conf
 	API="cli-shell-api"
 
-	if [ -f /var/run/eventwatch.pid ]; then
-      	    pid=$(cat /var/run/eventwatch.pid);
-            sudo kill -KILL $pid;
-            while [ -d /proc/$pid ]; do
-            	  sleep 1;
-            done;
-	    sudo rm -f /var/run/eventwatch.pid 2>&1 >/dev/null;
-	fi;
-
 	if [ "$COMMIT_ACTION" = "DELETE" ]; then
+           sudo /etc/init.d/eventwatchd stop
 	   exit 0
 	fi
 
@@ -92,10 +84,9 @@ end:
 
 	echo "</event-handler>" >> $configfile
 
-	sudo mv $configfile /etc/eventwatchd/eventwatch.conf
-	sudo /usr/sbin/eventwatchd.pl 2>&1 >/dev/null
-	ewstat=$(tail -n 1 /var/log/messages | grep 'eventwatchd:.*terminating$')
-	if [ "$ewstat" ]; then
-	   tac /var/log/messages | grep -m 2 eventwatchd: |cut -d " " -f 5-
-	   exit 1
-	fi;
+	sudo mv $configfile /etc/eventwatchd/eventwatchd.conf
+        sudo /etc/init.d/eventwatchd restart
+        if [ $? != 0 ]; then
+            echo "Could not start eventwatchd"
+            exit 1
+        fi
