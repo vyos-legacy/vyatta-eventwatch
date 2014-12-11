@@ -1,3 +1,9 @@
+vyatta-eventwatch (0.1+vyos2+lithium1) unstable; urgency=low
+
+  * New branch
+
+ -- Alex Harpin <development@landsofshadow.co.uk>  Thu, 11 Dec 2014 11:35:56 +0000
+ 
 vyatta-eventwatch (0.1+vyos1+helium2) unstable; urgency=low
 
   * Force release
