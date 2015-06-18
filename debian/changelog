@@ -1,3 +1,9 @@
+vyatta-eventwatch (0.1+vyos2+lithium2) unstable; urgency=low
+
+  * vyatta-eventwatch: update dh_gencontrol with new development build flag
+
+ -- Alex Harpin <development@landsofshadow.co.uk>  Thu, 18 Jun 2015 20:41:21 +0100
+ 
 vyatta-eventwatch (0.1+vyos2+lithium1) unstable; urgency=low
 
   * New branch
