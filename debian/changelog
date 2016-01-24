@@ -1,3 +1,13 @@
+vyatta-eventwatch (0.1+vyos2+current1) unstable; urgency=medium
+
+  [ Thomas Jepp ]
+  * Update build depends.
+  * Remove unnecessary build log file.
+
+  [ Kim Hagen ]
+
+ -- Kim Hagen <kim.sidney@gmail.com>  Sun, 24 Jan 2016 15:12:17 -0500
+
 vyatta-eventwatch (0.1+vyos2+lithium2) unstable; urgency=low
 
   * vyatta-eventwatch: update dh_gencontrol with new development build flag
