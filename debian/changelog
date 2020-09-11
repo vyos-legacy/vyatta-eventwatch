@@ -1,3 +1,9 @@
+vyatta-eventwatch (1.2.6) unstable; urgency=low
+
+  * New release.
+
+ -- VyOS maintainers <maintainers@vyos.io>  Fri, 11 Sep 2020 04:33:22 +0300
+
 vyatta-eventwatch (1.2.5) unstable; urgency=low
 
   * New release.
